@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jai Club</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a1f3c, #091a30);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      width: 90%;
+      max-width: 360px;
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .features {
+      text-align: left;
+      margin: 15px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .features p {
+      margin: 5px 0;
+    }
+
+    .highlight {
+      color: orange;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .countdown {
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: block;
+      background: linear-gradient(90deg, #1da1f2, #0088cc);
+      color: #fff;
+      padding: 12px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .footer {
+      font-size: 10px;
+      color: #888;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="logo.png" class="logo" alt="logo">
+
+  <h2>🇮🇳 JAI CLUB HACK SIGNAL BOT 🚀</h2>
+
+  <div class="features">
+    <p>💰 Premium Community Access</p>
+    <p>🚀 Smart Updates • Daily Signals</p>
+    <p>🔒 Private Channel • Limited Access</p>
+  </div>
+
+  <div class="highlight">🔥 FREE SIGNAL AVAILABLE 🔥</div>
+
+  <div class="countdown" id="timer">Joining In: 15s</div>
+
+  <a href="https://t.me/+G9VrCp8asuc2NjNl" class="btn">JOIN TELEGRAM NOW</a>
+
+  <div class="footer">
+    This page is for educational & informational purposes only.<br>
+    © 2026 All Rights Reserved
+  </div>
+</div>
+
+<script>
+  let time = 15;
+  let timer = document.getElementById("timer");
+
+  let countdown = setInterval(() => {
+    time--;
+    timer.innerText = "Joining In: " + time + "s";
+
+    if (time <= 0) {
+      clearInterval(countdown);
+      window.location.href = "https://t.me/+G9VrCp8asuc2NjNl";
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
